@@ -1,0 +1,82 @@
+body {
+  --primary-color: #ff6600;
+  --secondary-color: #f6f6ef;
+  --tertiary-color: #fff;
+  --border-color: #828282;
+  --font-color: #000;
+  
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+
+  font-family: sans-serif;
+  background-color: var(--secondary-color);
+  font-size: 16px;
+}
+.jobboard-title{
+  color: var(--primary-color);
+  font-size: var(--h1-font-size);
+}
+.jobboard{
+  padding: 10px;
+}
+.jobboard-list {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.jobboard-job {
+  background: var(--tertiary-color);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid var(--border-color);
+}
+
+.jobboard-job__title{
+  margin-top: 0px;
+  font-size: var(--h2-font-size);
+  margin-bottom: 15px;
+}
+
+.jobboard-list__loadmore{
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: var(--tertiary-color);
+  cursor: pointer;
+}
+.jobboard-job__creator{
+  padding-right: 15px;
+}
+
+.jobboard-job__link{
+  color: var(--font-color);
+  font-size: var(--h2-font-size);
+  font-weight: bold;
+  display: block;
+}
+
+.jobboard-job__desc{
+  display: flex;
+  flex-direction: column;
+}
+
+.jobboard-job__creator, 
+.jobboard-job__date{
+  margin: 0;
+}
+
+.jobboard-job__date {
+  padding-top: 10px;
+}
+
+@media(min-width: 768px){
+  .jobboard-job__desc{
+    flex-direction: row;
+  }
+
+  .jobboard-job__date {
+    padding-top: 0px;
+  }
+}
